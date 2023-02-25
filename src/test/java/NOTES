@@ -6,7 +6,7 @@
     utilities -> reusable metotlar, driver, configreader,..
 -Cucumber feature klasoru
     Tum feature file lar bu klasore gider
-    Tum test caseler gherken dilinde bu klasorde yazilir
+    Tum test caseler gherken dilinde bu klasorde ysteazilir
 -----------19 Subat 2023---------------------------
 1. Feature file olustur: ilkfeaturefile.feature
 Feature: ilk feature file
