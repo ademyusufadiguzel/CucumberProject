@@ -26,4 +26,12 @@ public class LoginPage {
     @FindBy(id = "dropdown-basic-button")
     public WebElement profileButton;
 
+    @FindBy(xpath = "//a[.='Logout']")
+    public WebElement logOut;
+
+    @FindBy(xpath = "//button[@class='ajs-button ajs-ok']")
+    public WebElement logOutOK;
+
+
+
 }
