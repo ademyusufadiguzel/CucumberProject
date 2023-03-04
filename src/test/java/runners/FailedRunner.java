@@ -1,4 +1,5 @@
 package runners;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -12,14 +13,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/failedRerun.txt"
         },
         monochrome = true,
-        features = "./src/test/resources/features",//features folder path
+        features = "@target/failedRerun.txt",//.txt folder path
         glue = {"stepdefinitions", "hooks"},   //stepdefinitions path
-        tags = "@failed_scenario",
         dryRun = false
 
 )
-public class Runner {
+public class FailedRunner {
 }
-//Bu sinif Test caseleri RUN etmek icin kullanilir
-//Ve konfigurasyonlar icin kullanilir
-//Runner class, features file lar ile step defitions i birbirile baglar
