@@ -177,3 +177,26 @@ public class Runner {
 //Bu sinif Test caseleri RUN etmek icin kullanilir
 //Ve konfigurasyonlar icin kullanilir
 //Runner class, features file lar ile step defitions i birbirile baglar
+
+
+**********************PARALLEL TEST******************
+----POM.XML OKU!!!----
+1. Plugins leri pom.xml e ekle
+    *surefire -> parallel test icin
+    *failsafe -> parallel testlerde bir testin fail olmasi durumunda diger testler calismaya devam etmesini kolaylastirir
+    *cucumber-report -> extra renkli gelismis raporlar verir
+2. Coklu runner class olustur. Bu runnerlar farkli scenarilari calistirsin
+    *SmokeTestRunner
+    *RegressionTestRunner
+    *TestRunner
+NOTE: Burda kullanilan taglerden en az bir tanesi feature fileda olmali. Aksi takdirde test bulunamaz
+3. Terminal/Power Shell/CMD kullanarak, maven kodu ile testleri calistir:
+mvn clean verify
+mvn clean install
+NOTE: Cucumber Reporting Linki :
+https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting
+https://github.com/damianszczepanik/maven-cucumber-reporting
+NOTE: Bilgisayardaki terminal CMD ile tester ayni sekilde calistirilabilir
+Bu durumda projenin icine girmemiz gerekir:
+cd ABSOLUTE PATH
+cd /Users/techproed/IdeaProjects/batch103Cucumber
